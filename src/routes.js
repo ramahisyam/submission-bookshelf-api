@@ -1,11 +1,11 @@
-const { getAllNotesHandler } = require('./handler');
+const { getAllNotesHandler, addBookHandler } = require('./handler');
 
 const routes = [
-    // {
-    //   method: 'POST',
-    //   path: '/notes',
-    //   handler: addNoteHandler,
-    // },
+    {
+      method: 'POST',
+      path: '/notes',
+      handler: addBookHandler,
+    },
     {
       method: 'GET',
       path: '/notes',
@@ -27,5 +27,5 @@ const routes = [
     //   handler: deleteNoteByIdHandler,
     // },
   ];
-  
+
   module.exports = routes;
